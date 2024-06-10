@@ -98,23 +98,24 @@
 			<h2>Bir sorunuz mu var?</h2>
 			<p class="mb-4">Bize ulaşın</p>
 
-			<form action="" class="form-contact">
+			<form id="contactForm"" class="form-contact">
 				<div class="row">
 					<div class="col-lg-6">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Başvuru sahibinin adı ve soyadı">
+							<input type="text" name="nameAndLastname" class="form-control" placeholder="Başvuru sahibinin adı ve soyadı" required>
 						</div>	
 					</div>
+			
 					<div class="col-lg-6">
 						<div class="form-group">
-							<input type="email" class="form-control" placeholder="mailadresi@mail.com">
+							<input type="email" name="mailAdress" class="form-control" placeholder="mailadresi@mail.com" required>
 						</div>
 					</div>
 				</div>
 
 				<div class="col-lg-12">
 					<div class="form-group">
-						<textarea rows="10" cols="10" class="form-control" placeholder="Başvuru sebebi"></textarea>
+						<textarea rows="10" cols="10" name="message" class="form-control" placeholder="Başvuru sebebi" required></textarea>
 					</div>
 				</div>
 
@@ -236,5 +237,7 @@
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/rellax.min.js"></script>
 	<script src="js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script src="js/contact.js"></script>
 </body>
 </html>
