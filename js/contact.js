@@ -17,6 +17,7 @@
         emailjs.sendForm(serviceID, templateID, form).then(
             (response) => {
               console.log('SUCCESS!', response.status, response.text);
+              form.reset();
             },
             (error) => {
               console.log('FAILED...', error);
